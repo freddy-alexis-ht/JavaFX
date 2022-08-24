@@ -7,8 +7,8 @@ Al ejecutar la aplicación, se muestra una ventana, pero ésta está compuesta d
 - Scene-Graph: it's a hierarchical tree of nodes. Nodes are different components in the scene: buttons, text-boxes, images, ...  
 
 Como mínimo se necesita un 'root-node' para crear un 'Scene', el cual será agregado al 'Stage'.  
-
-![stage-scene-sceneGraph](../stage-scene-sceneGraph.png)
+>La ruta que me acepta en las imágenes es el 'path-from-content-root'.
+![stage-scene-sceneGraph](src/main/resources/images/stage-scene-sceneGraph.png)
 
 ### Código
 
