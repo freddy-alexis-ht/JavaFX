@@ -1,0 +1,69 @@
+## 1. CONFIGURACIÓN DEL PROYECTO
+
+### Repo-local y Repo-remoto
+- Creación del repo-remoto
+    - Licencia: GNU GLP v3
+- Creación del repo-local: `git init`
+- Vinculación de repos: `git remote add origin https://github.com/freddy-alexis-ht/JavaFX.git`
+- Sincronización de branches: `git pull origin master`
+
+### Creación del proyecto
+
+- Ir a: https://openjfx.io/ -> Download -> Windows/18.0.2/SDK
+- Elegir un lugar para descomprimir, p.e.: `C:\Program Files\Java`
+- En IntelliJ -> New Project -> JavaFX -> Name: javafx -> group: com.sunday -> artifact: javafx -> Project SDK: 18
+
+- Ir a https://openjfx.io/openjfx-docs/ -> Java FX and Intellij -> Non-modular from IDE -> Seguir las instrucciones:
+- Se mostrarán algunas clases por defecto, pero con warnings:
+  - File -> Project Structure -> Project -> SDK -> 18.0.2
+  - File -> Project Structure Libraries -> + -> Java -> select the JavaFX SDK downloaded: C:\Program Files\Java\javafx-sdk-18.0.2\lib -> Apply -> OK
+
+Según la web-page de la documentación indicada antes, hay más pasos, pero me bastó con los anteriores. Se ejecuta y se muestra una ventana.
+
+### Scene Builder
+
+- Buscar SceneBuilder: https://gluonhq.com/products/scene-builder/ -> Download
+- File -> Settings -> Languages & Frameworks -> JavaFX -> Path to SceneBuilder -> ubicación del `.exe`
+- En el proyecto: ir al archivo `.fxml` -> Open in SceneBuilder.
+
+### Probando el SceneBuilder
+- Containers -> AnchorPane -> otros componentes
+- File -> Save (esto se guardará en el `.fxml`)
+
+En la clase principal estará este código:
+- Para ejecutar, borrar las dimensiones en 'scene'.
+~~~
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        stage.setTitle("Hello!");
+        stage.setScene(new Scene(fxmlLoader.load()));
+        stage.show();
+    }
+~~~
+
+- Esto también sirve (un poco más resumido)
+~~~
+    public void start(Stage stage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        stage.setTitle("Hello!");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+~~~
+
+## Creación de módulos
+
+- File -> New Module -> Name: stages -> Location: ..\pry-javafx\stages -> group: com.sunday -> artifact: stages -> Project SDK: 18
+- Ejecutar para verificar que funciona.
+  - Name .. nombre del módulo en el proyecto
+  - Location .. nombre del módulo en las carpetas
+  - Group y artifact .. carpetas en el proyecto
+
+## Orden de módulos:
+1. stages
+
+## Markdown
+
+[Markdown syntax in IntelliJ 2021](https://www.jetbrains.com/help/upsource/markdown-syntax.html "02-abr-2021")
+
+[Markdown sintax in IntelliJ 2022](https://www.jetbrains.com/help/idea/markdown.html "22-jul-2022")
