@@ -1,14 +1,26 @@
-## STAGES
+## INICIO
+Every JavaFX application must ..
+- Import javafx.application.Application class.
+- Extend Application in your class.
+- Override the start() method (present in Application) in your class.
+- Call launch() static-method (present in Application) in main() of your class.
 
+### Stage - Scene - Layout -Node
 
 Al ejecutar la aplicación, se muestra una ventana, pero ésta está compuesta de lo que se muestra en la imagen.
-- Stage: top level container to hold our JavaFX GUI apps, it's similar to JFrame in Swing.
-- Scene: drawing surface for graphical content, it's similar to JPanel.
-- Scene-Graph: it's a hierarchical tree of nodes. Nodes are different components in the scene: buttons, text-boxes, images, ...  
+- **Stage:** Top level container to hold our JavaFX GUI apps, it's similar to JFrame in Swing.
+- **Scene:** Drawing surface for graphical content, it's similar to JPanel.
+- **Layout:** The way nodes are arranged, they can be in a grid, group, row, column, ..
+- **Node/Control/Component:** Labels, buttons, images, ..
+- **Scene-Graph:** it's a hierarchical tree of nodes.
 
-Como mínimo se necesita un 'root-node' para crear un 'Scene', el cual será agregado al 'Stage'.  
+Uno va contenido dentro de otro: **Node -> Layout -> Scene -> Stage**
+
+Como mínimo se necesita un 'root-node' (layout) para crear un 'Scene', el cual será agregado al 'Stage'.  
 >La ruta que me acepta en las imágenes es el 'path-from-content-root'.
+> 
 ![stage-scene-sceneGraph](src/main/resources/images/stage-scene-sceneGraph.png)
+![stage-scene-layout-node](src/main/resources/images/stage-scene-layout-node.png)
 
 ### Código
 
