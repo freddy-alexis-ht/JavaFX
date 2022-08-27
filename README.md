@@ -64,6 +64,7 @@ En la clase principal estará este código:
 2. stages2 .. working with nodes: text, lines, images, ..
 3. event-handling .. working with controller and .fxml.
 4. css-styling .. applying css to a JavaFX GUI application
+5. switch-scenes .. switching from scene1 to scene2
 
 ## Markdown
 
