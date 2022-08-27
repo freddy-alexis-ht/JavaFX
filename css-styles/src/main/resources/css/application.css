@@ -1,0 +1,23 @@
+/* Si quisiera aplicar estilos al root-node, se indica su clase*/
+/* Usualmente se indica la propiedad y el valor */
+/* En JavaFX, se antepone el prefijo: -fx- */
+.root {
+    -fx-background-color: #111; /* o un color sólido, p.e.: "black" */
+}
+/* Si quisiera aplicar estilos a todos los label, se indica su clase*/
+.label {
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "white";
+    /* Esto centra el texto en el contenedor del label */
+    /* Esto no es suficiente porque el contenedor del label ahora tiene el ancho del text contenido */
+    -fx-alignment: center;
+    /* En SceneBuilder se expande el ancho de los contenedores de ambos label's */
+    /* Guardar cambios en SceneBuilder */
+    /* Tal vez sea necesario abrir el .fxml para asegurarnos que están los cambios */
+}
+
+#titleLabel {
+    -fx-font-size: 60;
+}
+

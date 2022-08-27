@@ -60,7 +60,10 @@ En la clase principal estará este código:
   - Group y artifact .. carpetas en el proyecto
 
 ## Orden de módulos:
-1. stages
+1. stages .. working with stage, scene, root-node.
+2. stages2 .. working with nodes: text, lines, images, ..
+3. event-handling .. working with controller and .fxml.
+4. css-styling .. applying css to a JavaFX GUI application
 
 ## Markdown
 
