@@ -65,6 +65,17 @@ En la clase principal estará este código:
 3. event-handling .. working with controller and .fxml.
 4. css-styling .. applying css to a JavaFX GUI application
 5. switch-scenes .. switching from scene1 to scene2
+6. logout-exit-button .. closing a window with confirmation popup
+7. image-view .. Using ImageView features
+8. TextField .. Working with text-fields in a submit-app
+9. CheckBox .. Working with a check-box to turn on/off a bulb
+10. RadioButton .. Working with radio-buttons to select foods
+11. DatePicker .. Using date-picker to show the date on a label
+12. ColorPicker .. Using color-picker to change the background-color
+13. ChoiceBox .. Using a choice-box as a list of food
+14. Slider .. Using a slider to change the temperature
+15. ProgressBar .. Increase the progress-bar with each click in the button
+16. Spinner .. Changing numbers in the Spinner and display in Label.
 
 ## Markdown
 
