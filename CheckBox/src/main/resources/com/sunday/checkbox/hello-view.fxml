@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sunday.checkbox.HelloController">
+   <children>
+      <CheckBox fx:id="chbOnOff" layoutX="64.0" layoutY="179.0" mnemonicParsing="false" onAction="#change" text="ON/OFF" />
+      <Label fx:id="lbBulb" layoutX="87.0" layoutY="139.0" text="OFF" />
+      <ImageView fx:id="imvBulb" fitHeight="97.0" fitWidth="116.0" layoutX="70.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/bulb-off.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
