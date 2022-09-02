@@ -76,6 +76,14 @@ En la clase principal estará este código:
 14. Slider .. Using a slider to change the temperature
 15. ProgressBar .. Increase the progress-bar with each click in the button
 16. Spinner .. Changing numbers in the Spinner and display in Label.
+17. ListView .. Selected ListView item displayed on a label
+18. TreeView .. TreeView with root, branches, leaves and an icon
+19. MenuBar .. Working with Menu, MenuItems, onAction, shortcut and more
+20. KeyEvents .. Detecting key-events in a Scene with EventHandler
+21. Animations .. Translate, rotate, fade and scale an image (module: Animations)
+22. MediaView .. Play, pause and reset a video (module: MediaView)
+23. WebView .. Embedding a web browser (module: WebView)
+24. MP3-Player .. A complete mp3 player (module: MP3Player)
 
 ## Markdown
 
